@@ -1,0 +1,192 @@
+{
+  "quizzes": [
+    {
+      "date": "2024-04-17",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Robyn Williams",
+          "image": "https://resizing.flixster.com/dd0okVg6J1R3HEzb5k5lwV7vcxU=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/55875_v9_ba.jpg",
+          "common": "Played Presidents",
+          "link": "https://www.imdb.com/name/nm0000245/?ref_=nv_sr_srsg_6_tt_0_nm_8_q_robyn%2520williams"
+        },
+        {
+          "id": 2,
+          "name": "Bill Murray",
+          "image": "https://resizing.flixster.com/B4MmWXl2XXOaYaVEE0JQdVjc0MQ=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/8327_v9_bc.jpg",
+          "common": "Played Presidents",
+          "link": "https://www.imdb.com/name/nm0000195/?ref_=nv_sr_srsg_0_tt_1_nm_7_q_bill%2520mu"
+        },
+        {
+          "id": 3,
+          "name": "Tom Selleck",
+          "image": "https://www.firstforwomen.com/wp-content/uploads/sites/2/2023/07/tom-selleck.jpg?resize=953,536",
+          "common": "Played Presidents",
+          "link": "https://www.imdb.com/name/nm0000633/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_tom%2520sell"
+        },
+        {
+          "id": 4,
+          "name": "Bryan Cranston",
+          "image": "https://resizing.flixster.com/H2gXj7bm0F7pok53yCGTZS1qop4=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/164311_v9_bb.jpg",
+          "common": "Played Presidents",
+          "link": "https://www.imdb.com/name/nm0186505/?ref_=fn_al_nm_1"
+        }
+      ],
+      "answers": [
+        "presidents",
+        "played presidents",
+        "president"
+      ]
+    },
+    {
+      "date": "2024-04-18",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Lupita Nyong’o",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2013/09/12_years_a_slave_featured1.jpg?w=618&ssl=1",
+          "common": "Won Oscars",
+          "link": "https://www.imdb.com/name/nm2143282/"
+        },
+        {
+          "id": 2,
+          "name": "Marion Cotillard",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2014/02/Marion-Cotillard-La-Vie-en-Rose.jpg?w=325&ssl=1",
+          "common": "Won Oscars",
+          "link": "https://www.imdb.com/name/nm0182839/?ref_=fn_al_nm_1"
+        },
+        {
+          "id": 3,
+          "name": "Jennifer Hudson",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2014/02/Jennifer-Hudson-Dreamgirls.jpg?w=618&ssl=1",
+          "common": "Won Oscars",
+          "link": "https://www.imdb.com/name/nm1617685/?ref_=fn_al_nm_1"
+        },
+        {
+          "id": 4,
+          "name": "Geoffrey Rush",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2014/02/Geoffrey-Rush-Shine.jpg?w=618&ssl=1",
+          "common": "Won Oscars",
+          "link": "https://www.imdb.com/name/nm0001691/?ref_=fn_al_nm_1"
+        }
+      ],
+      "answers": ["oscars", "won oscars", "Oscar", "oscar", "oscar winner", "they won oscars"]
+    },
+    {
+      "date": "2024-04-19",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Boris Karloff",
+          "image": "https://phantom-elmundo.unidadeditorial.es/8f0e891eafe362af0c5d1518462f5902/crop/3x212/2048x1575/resize/473/f/webp/assets/multimedia/imagenes/2021/02/09/16128719928762.jpg",
+          "common": "Frankenstein",
+          "link": "https://www.imdb.com/name/nm0000472/"
+        },
+        {
+          "id": 2,
+          "name": "Peter Boyle",
+          "image": "https://ntvb.tmsimg.com/assets/assets/51216_v9_ba.jpg?w=270&h=360",
+          "common": "Frankenstein",
+          "link": "https://www.imdb.com/name/nm0001967/"
+        },
+        {
+          "id": 3,
+          "name": "Robert De Niro",
+          "image": "https://variety.com/wp-content/uploads/2023/06/GettyImages-1492006518-e1685626170718.jpg?w=1000&h=563&crop=1&resize=1000%2C563",
+          "common": "Frankenstein",
+          "link": "https://www.imdb.com/name/nm0000134/"
+        },
+        {
+          "id": 4,
+          "name": "Glenn Strange",
+          "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrdLbEG_XRCokMDg9IBJb_MZNZfCPSfvXqgFZsU4MYdDeU6EF42Js6z-rdPtJ6HuRkeUJieG3oTi6OZXonMi0Ot1pmqzLrBgXfr26FpH0-utFbvCuDSI5G9DPxWhEaqpCc_E4A2Ibf-jo/s320/Strange.jpg",
+          "common": "Frankenstein",
+          "link": "https://www.imdb.com/name/nm0833363/?ref_=nv_sr_srsg_0_tt_3_nm_5_q_glenn%2520stra"
+        }
+      ],
+      "answers": [
+        "Frankenstein",
+        "They all played Frankenstein",
+        "Frankenstein's monsters",
+        "They all played Frankenstein's monster"
+      ]
+    },
+    {
+      "date": "2024-04-20",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Ioan Gruffudd",
+          "image": "https://images.hellomagazine.com/horizon/landscape/17e3718589ef-ioan-gruffudd.jpg?tx=c_limit,w_960",
+          "common": "Mister Fantastic",
+          "link": "https://www.imdb.com/name/nm0344435/?ref_=nv_sr_srsg_0_tt_0_nm_2_q_Ioan%2520Gruffudd"
+        },
+        {
+          "id": 2,
+          "name": "Miles Teller",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Miles_Teller_Commanders_at_Eagles_NOV2022_%28close-up%29.jpg/220px-Miles_Teller_Commanders_at_Eagles_NOV2022_%28close-up%29.jpg",
+          "common": "Mister Fantastic",
+          "link": "https://www.imdb.com/name/nm1886602/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_miles"
+        },
+        {
+          "id": 3,
+          "name": "John Krasinski",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/John_Krasinski_2018.png/220px-John_Krasinski_2018.png",
+          "common": "Mister Fantastic",
+          "link": "https://www.imdb.com/name/nm1024677/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_john%2520k"
+        },
+        {
+          "id": 4,
+          "name": "Pedro Pascal",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pedro_Pascal_by_Gage_Skidmore.jpg/220px-Pedro_Pascal_by_Gage_Skidmore.jpg",
+          "common": "Mister Fantastic",
+          "link": "https://www.imdb.com/name/nm0050959/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_pedr"
+        }
+      ],
+      "answers": [
+        "Mister Fantastic",
+        "the fantastic four",
+        "the fantastic 4"
+      ]
+    },
+    {
+      "date": "2024-04-21",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Zac Efron",
+          "image": "https://media1.popsugar-assets.com/files/thumbor/BLAK9IZLBJO3quGJ8mPGHXak3Wo=/0x0:2258x3386/fit-in/1584x2376/filters:format_auto():upscale()/2023/09/22/810/n/1922398/27727fcc650ddc7dbce2a6.79579687_.jpg",
+          "common": "serial killer",
+          "link": "https://www.imdb.com/name/nm1374980/?ref_=fn_al_nm_1"
+        },
+        {
+          "id": 2,
+          "name": "Jeremy Renner",
+          "image": "https://i2-prod.mirror.co.uk/incoming/article20578817.ece/ALTERNATES/n310p/0_Marvel-Avengers-Assemble-European-Premiere-Outside-Arrivals.jpg",
+          "common": "serial killer",
+          "link": "https://www.imdb.com/name/nm0719637/?ref_=nv_sr_srsg_6_tt_0_nm_8_q_jerem"
+        },
+        {
+          "id": 3,
+          "name": "Damon Herriman",
+          "image": "https://static1.colliderimages.com/wordpress/wp-content/uploads/justified-damon-herriman-1-413x600.jpg?q=50&fit=crop&w=750&dpr=1.5",
+          "common": "serial killer",
+          "link": "https://www.imdb.com/name/nm0380632/?ref_=nv_sr_srsg_0_tt_1_nm_3_q_Damon%2520Herriman"
+        },
+        {
+          "id": 4,
+          "name": "Charlize Theron",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/charlize-theron-attends-carusos-palisades-village-opening-news-photo-1690823523.jpg?resize=1200:*",
+          "common": "serial killer",
+          "link": "https://www.imdb.com/name/nm0000234/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_Charlize%2520Theron"
+        }
+      ],
+      "answers": [
+        "Serial Killer",
+        "Killer",
+        "Played a serial killer",
+        "they played serial killers"
+      ]
+    }
+  ]
+}

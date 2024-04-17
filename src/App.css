@@ -1,38 +1,184 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #000;
+  z-index: 1000;
+}
+
 .App {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  width: 90vw;
+  padding: 20px;
+}
+
+.title {
+  color: #c3e6cb;
+}
+
+.actor-card {
+  width: 200px; /* Fixed width for each card */
+  margin: 10px; /* Margin around cards */
+  border: 1px solid #ccc; /* Optional border */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  text-align: center; /* Centering text */
+  background-color: #fff; /* White background */
+}
+
+.actor-image {
+  width: 100%; /* Make image fill the card */
+  height: 300px; /* Fixed height for images */
+  object-fit: cover; /* Ensure image covers the space without distortion */
+}
+
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  background-color: #007BFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.actor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+.actor-card:hover {
+  transform: scale(1.05); /* slightly enlarge card on hover */
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actor-list {
+  margin-bottom: 20px; /* Spacing between actor cards and input area */
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
   color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input[type="text"] {
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* responsive width */
+  box-sizing: border-box; /* include padding and border in width */
+}
+
+.blur {
+  filter: blur(8px);
+  transition: filter 1s;
+}
+.imdb-logo {
+  width: 50px; /* Adjust size as needed */
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .actor-card {
+    width: 100%; /* Make cards take up full width on small screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .actor-image {
+    height: auto; /* Reduce image height on small screens */
+  }
+
+  .input-area {
+    padding-left: 2.5%;
+    width: 95%; /* Make input area take up full width on small screens */
+  }
+
+  input[type="text"] {
+    width: 100%; /* Make input field take up full width on small screens */
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    z-index: 1000;
+    width: 80%;
   }
 }
