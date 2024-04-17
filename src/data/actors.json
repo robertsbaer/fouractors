@@ -32,6 +32,12 @@
           "link": "https://www.imdb.com/name/nm0186505/?ref_=fn_al_nm_1"
         }
       ],
+      "hints": [{
+        "hint1": "Similar role",
+        "hint2": "Polictical",
+        "hint3": "Leader"
+      } 
+      ],
       "answers": [
         "presidents",
         "played presidents",
@@ -70,6 +76,12 @@
           "link": "https://www.imdb.com/name/nm0001691/?ref_=fn_al_nm_1"
         }
       ],
+      "hints": [{
+        "hint1": "Best",
+        "hint2": "Once a year",
+        "hint3": "Award"
+      } 
+      ],
       "answers": ["oscars", "won oscars", "Oscar", "oscar", "oscar winner", "they won oscars"]
     },
     {
@@ -103,6 +115,12 @@
           "common": "Frankenstein",
           "link": "https://www.imdb.com/name/nm0833363/?ref_=nv_sr_srsg_0_tt_3_nm_5_q_glenn%2520stra"
         }
+      ],
+      "hints": [{
+        "hint1": "Pitch fork",
+        "hint2": "From a book",
+        "hint3": "Monster"
+      } 
       ],
       "answers": [
         "Frankenstein",
@@ -143,6 +161,12 @@
           "link": "https://www.imdb.com/name/nm0050959/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_pedr"
         }
       ],
+      "hints": [{
+        "hint1": "Science",
+        "hint2": "Rubber band",
+        "hint3": "Marvel"
+      } 
+      ],
       "answers": [
         "Mister Fantastic",
         "the fantastic four",
@@ -180,6 +204,12 @@
           "common": "serial killer",
           "link": "https://www.imdb.com/name/nm0000234/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_Charlize%2520Theron"
         }
+      ],
+      "hints": [{
+        "hint1": "Notorious",
+        "hint2": "Death",
+        "hint3": "_ and milk"
+      } 
       ],
       "answers": [
         "Serial Killer",

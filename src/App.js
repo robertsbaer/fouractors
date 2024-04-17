@@ -1,11 +1,10 @@
 import * as fuzz from 'fuzzball';
+
 import React, { useEffect, useState } from "react";
 import ActorCard from "./ActorCard";
 import './App.css';
-import BuyMeACoffeeButton from './BuyMeACoffeeButton'; // Make sure the path is correct
+import BuyMeACoffeeButton from './BuyMeACoffeeButton';
 import data from "./data/actors.json";
-
-
 
 function App() {
   const [games, setGames] = useState([]);
@@ -14,6 +13,8 @@ function App() {
   const [message, setMessage] = useState("");
   const [blur, setBlur] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [hintsUsed, setHintsUsed] = useState(0);
+  const [currentHint, setCurrentHint] = useState("");
 
   useEffect(() => {
     const today = new Date().toISOString().slice(0, 10);
@@ -21,7 +22,7 @@ function App() {
     if (dailyGames.length > 0) {
       setGames(dailyGames);
       setBlur(true);
-      setTimeout(() => setBlur(false), 1000); // Unblur after 1 second
+      setTimeout(() => setBlur(false), 1000);
     } else {
       setMessage("No quizzes available for today.");
     }
@@ -34,7 +35,7 @@ function App() {
         const guessRatio = fuzz.ratio(guess.toLowerCase().trim(), answer);
         return guessRatio > highest ? guessRatio : highest;
       }, 0);
-      if (highestRatio > 80) { // You can adjust this threshold as needed
+      if (highestRatio > 70) {
         setMessage("Correct!");
         setBlur(true);
         setTimeout(() => {
@@ -45,29 +46,37 @@ function App() {
             setMessage("");
             setBlur(false);
           } else {
-            setMessage("You've completed the games for today! Come back tomorrow for another round. Also, check out another game at <a href='https://www.letrsets.com' target='_blank' rel='noopener noreferrer'>letrsets.com</a>.");
+            setMessage("You've completed the games for today! Come back tomorrow for another round.");
           }
-        }, 2000); // 2 seconds delay before loading the next game
+        }, 2000);
       } else {
         setMessage("Incorrect, try again!");
       }
     }
   };
 
+  const useHint = () => {
+    const currentGame = games[currentGameIndex];
+    if (currentGame && hintsUsed < 3) {
+      const hintKey = `hint${hintsUsed + 1}`; // constructs 'hint1', 'hint2', etc.
+      const newHint = currentGame.hints[0][hintKey]; // Access hint from the array
+      setCurrentHint(newHint);
+      setHintsUsed(hintsUsed + 1);
+    }
+  };
+  
+
   return (
     <div className="App">
       <button onClick={() => setIsModalOpen(true)}>Instructions</button>
       {isModalOpen && (
         <div className="modal">
-        <h2>Instructions</h2>
-        <p>Welcome to the game! Your objective is to guess what the four actors listed have in common. However, the commonality will never be as simple as their gender (all men or all women).</p>
-        <p>Think beyond basic characteristics like gender and focus on roles, awards, and other significant aspects of their careers and life.</p>
-        <p>Yes! Some answers may be correct but just not today. For example they may all be comedic actors but if it said it's wrong that's not the answer and another one is correct.</p>
-        <p>The IMDB link may help</p>
-        <button onClick={() => setIsModalOpen(false)}>X</button>
-      </div>
-        )}
-      <h1 className='title'>What do these actors have in common?</h1>
+          <h2>Instructions</h2>
+          <p>Welcome to the game! Your objective is to guess what the four actors listed have in common.</p>
+          <button onClick={() => setIsModalOpen(false)}>Close</button>
+        </div>
+      )}
+      <h1>What do these actors have in common?</h1>
       {games.length > 0 && games[currentGameIndex] && (
         <div>
           <div className={`actor-container ${blur ? "blur" : ""}`}>
@@ -76,11 +85,6 @@ function App() {
             ))}
           </div>
           <div className="input-area">
-          {message && (
-            <p className={message.includes("Correct!") ? "message success" : "message error"}
-              dangerouslySetInnerHTML={{ __html: message }}>
-            </p>
-          )}
             <input
               type="text"
               value={guess}
@@ -88,13 +92,12 @@ function App() {
               placeholder="Enter your guess here"
             />
             <button onClick={handleGuess}>Submit Guess</button>
+            {currentHint && <p className="hint-display">Hint: {currentHint}</p>}
+          <button onClick={useHint} disabled={hintsUsed >= 3} className="hint-button">Use Hint ({hintsUsed}/3)</button>
           </div>
         </div>
       )}
-      {message && currentGameIndex >= games.length && (
-        <p className="message success">Congratulations, you've completed all games for today!</p>
-        )}
-        <BuyMeACoffeeButton />
+      <BuyMeACoffeeButton />
     </div>
   );
 }

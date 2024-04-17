@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
 }
 
@@ -25,6 +25,16 @@ body {
 
 .title {
   color: #c3e6cb;
+}
+
+.hint-button {
+  margin-top: 10px;
+}
+.hint-display {
+  background-color: #c3e6cb;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .actor-card {
