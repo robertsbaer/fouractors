@@ -71,11 +71,14 @@ function App() {
       <button onClick={() => setIsModalOpen(true)}>Instructions</button>
       {isModalOpen && (
         <div className="modal">
-          <h2>Instructions</h2>
-          <p>Welcome to the game! Your objective is to guess what the four actors listed have in common.</p>
-          <button onClick={() => setIsModalOpen(false)}>Close</button>
-        </div>
-      )}
+        <h2>Instructions</h2>
+        <p>Welcome to the game! Your objective is to guess what the four actors listed have in common. However, the commonality will never be as simple as their gender (all men or all women).</p>
+        <p>Think beyond basic characteristics like gender and focus on roles, awards, and other significant aspects of their careers and life.</p>
+        <p>Yes! Some answers may be correct but just not today. For example they may all be comedic actors but if it said it's wrong that's not the answer and another one is correct.</p>
+        <p>The IMDB link may help</p>
+        <button onClick={() => setIsModalOpen(false)}>X</button>
+      </div>
+        )}
       <h1>What do these actors have in common?</h1>
       {games.length > 0 && games[currentGameIndex] && (
         <div>
