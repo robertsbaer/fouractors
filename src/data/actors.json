@@ -1,7 +1,7 @@
 {
   "quizzes": [
     {
-      "date": "2024-04-17",
+      "date": "2024-04-18",
       "actors": [
         {
           "id": 1,
@@ -20,7 +20,7 @@
         {
           "id": 3,
           "name": "Tom Selleck",
-          "image": "https://www.firstforwomen.com/wp-content/uploads/sites/2/2023/07/tom-selleck.jpg?resize=953,536",
+          "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF78KTjJZZ3T6IvYRzbNVTouiQ4vIim_L9QAhFZWkwJ4EL8bS6cYAtr1Gw-7PtcMsMvFh5Ygkda4fva3lJzhCe9fT7q0Ys2qUkSp8iDZoW3nxzssy6ORoncQ723GFMOXeoGpynC0-BRqBsr8GcJKR4asgC27-0ZOGTUEPQpiBv8b7-4hMRcuBgvFCTiQ/s3200/Tom%20Selleck%20Rolex%20GMT-Master%20Magnum%20PI.jpg",
           "common": "Played Presidents",
           "link": "https://www.imdb.com/name/nm0000633/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_tom%2520sell"
         },
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "date": "2024-04-18",
+      "date": "2024-04-19",
       "actors": [
         {
           "id": 1,
@@ -85,7 +85,7 @@
       "answers": ["oscars", "won oscars", "Oscar", "oscar", "oscar winner", "they won oscars"]
     },
     {
-      "date": "2024-04-19",
+      "date": "2024-04-20",
       "actors": [
         {
           "id": 1,
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "date": "2024-04-20",
+      "date": "2024-04-21",
       "actors": [
         {
           "id": 1,
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "date": "2024-04-21",
+      "date": "2024-04-22",
       "actors": [
         {
           "id": 1,
