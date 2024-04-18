@@ -41,7 +41,7 @@
       "answers": [
         "presidents",
         "played presidents",
-        "president"
+        "they played presidents"
       ]
     },
     {
@@ -82,7 +82,12 @@
         "hint3": "Award"
       } 
       ],
-      "answers": ["oscars", "won oscars", "Oscar", "oscar", "oscar winner", "they won oscars"]
+      "answers": [
+        "oscars", 
+        "won oscars", 
+        "oscar winner", 
+        "they won oscars"
+      ]
     },
     {
       "date": "2024-04-20",

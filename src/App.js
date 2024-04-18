@@ -1,9 +1,11 @@
 import * as fuzz from 'fuzzball';
+import moment from 'moment'; // Import moment
 import React, { useEffect, useState } from "react";
 import ActorCard from "./ActorCard";
 import './App.css';
 import BuyMeACoffeeButton from './BuyMeACoffeeButton'; // Make sure the path is correct
 import data from "./data/actors.json";
+
 
 function HintButton({ hints }) {
   const [hintCount, setHintCount] = useState(0);
@@ -43,12 +45,11 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = moment().format('YYYY-MM-DD'); // Use moment to get the local date
     const dailyGames = data.quizzes.filter((quiz) => quiz.date === today);
+
     if (dailyGames.length > 0) {
       setGames(dailyGames);
-      setBlur(true);
-      setTimeout(() => setBlur(false), 1000); // Unblur after 1 second
     } else {
       setMessage("No quizzes available for today.");
     }
@@ -72,7 +73,7 @@ function App() {
             setMessage("");
             setBlur(false);
           } else {
-            setMessage("You've completed the games for today! Come back tomorrow for another round. Also, check out another game at <a href='https://www.letrsets.com' target='_blank' rel='noopener noreferrer'>letrsets.com</a>.");
+            setMessage("You've completed the games for today! Come back tomorrow for another round. Also, check out another game at <a href='https://www.letrsets.com' target='_blank' rel='noopener noreferrer'>letrsets.com</a>");
           }
         }, 2000); // 2 seconds delay before loading the next game
       } else {
@@ -94,8 +95,9 @@ function App() {
           <button onClick={() => setIsModalOpen(false)}>X</button>
         </div>
       )}
-      <h1 className='title'>What do these actors have in common?</h1>
       {games.length > 0 && games[currentGameIndex] && (
+        <>
+        <h1 className='title'>What do these actors have in common?</h1>
         <div>
           <div className={`actor-container ${blur ? "blur" : ""}`}>
             {games[currentGameIndex].actors.map((actor) => (
@@ -124,9 +126,10 @@ function App() {
             </div>
           </div>
         </div>
+        </>
       )}
       {message && currentGameIndex >= games.length && (
-        <p className="message success">Congratulations, you've completed all games for today!</p>
+        <p className="message success">Sorry! No Game today. Go checkout this game<a href='https://www.letrsets.com' target='_blank' rel='noopener noreferrer'>letrsets.com</a></p>
       )}
       <BuyMeACoffeeButton />
     </div>

@@ -1,6 +1,8 @@
+import moment from 'moment'; // Import moment
 import React, { useEffect, useState } from "react";
 import ActorCard from "./ActorCard";
 import actorsData from "./data/actors.json"; // Assuming you have a JSON file
+
 
 
 function Game() {
@@ -8,9 +10,9 @@ function Game() {
   const [guess, setGuess] = useState("");
 
   useEffect(() => {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = moment().format('YYYY-MM-DD'); // Get today's date in the local time zone
     if (localStorage.getItem("lastPlayed") !== today) {
-      setDailyActors(actorsData[new Date().getDay()]); // Example logic
+      setDailyActors(actorsData[new Date().getDay()]); // Assuming your data indexing is correct
       localStorage.setItem("lastPlayed", today);
     }
   }, []);
