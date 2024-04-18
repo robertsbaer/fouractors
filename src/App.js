@@ -17,6 +17,9 @@ function HintButton({ hints }) {
 
   return (
     <div className="hintContainer">
+      <button onClick={showNextHint}>
+        Hint ({hintCount}/{hintKeys.length})
+      </button>
       {hintCount > 0 && (
         <div className="hintBox">
           {hintKeys.slice(0, hintCount).map((key, index) => (
@@ -26,9 +29,6 @@ function HintButton({ hints }) {
           ))}
         </div>
       )}
-      <button onClick={showNextHint}>
-        Show Hint ({hintCount}/{hintKeys.length})
-      </button>
     </div>
   );
   
@@ -114,9 +114,13 @@ function App() {
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Enter your guess here"
             />
+            <div className="button-container-both">
             <div className="button-container">
               {games.length > 0 && games[currentGameIndex] && <HintButton hints={games[currentGameIndex].hints[0]} />}
+            </div>
+            <div className="button-container">
               <button onClick={handleGuess}>Submit Guess</button>
+            </div>
             </div>
           </div>
         </div>

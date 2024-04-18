@@ -1,5 +1,236 @@
 body {
   background-color: #000000;
+  font-family: 'Roboto', sans-serif; /* Updated font family */
+  color: #ffffff; /* Default text color for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #212529; /* Dark grey for modal background */
+  padding: 20px;
+  border: 2px solid #343a40; /* Subtle border */
+  z-index: 1000;
+  width: auto; /* Adjust width to content size */
+  max-width: 600px; /* Max width for larger screens */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Enhanced shadow for depth */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  width: 90vw;
+  padding: 20px;
+  max-width: 960px; /* Max width for layout */
+  margin: auto; /* Center the app */
+}
+
+img {
+  width: 33%;
+}
+p{
+  color: #000000;
+}
+
+.title {
+  color: #d8ebad; /* Vibrant blue for titles */
+  font-size: 24px; /* Larger font size for titles */
+}
+
+.hint-button {
+  margin-top: 10px;
+  background-color: #6c757d; /* Darker button background for better contrast */
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  width: fit-content;
+}
+
+.hint-button:hover {
+  background-color: #5a6268; /* Slightly darker on hover */
+}
+
+.hint-display {
+  background-color: #343a40; /* Darker background for hints */
+  color: #f8f9fa; /* Light text for readability */
+  padding: 20px;
+  width: 100%; /* Full width */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.actor-card {
+  width: 20%; /* Responsive width */
+  margin: 10px;
+  border: none; /* Removing border */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.actor-card:hover {
+  transform: scale(1.05);
+}
+
+.actor-image {
+  width: 100%;
+  height: 260px; /* Make height responsive */
+  object-fit: cover;
+}
+
+.hintBox p{
+  color: #f8f9fa;
+}
+
+.modal p {
+  color: #f8f9fa
+}
+
+.message {
+  font-size: 16px;
+  font-weight: normal; /* Less bold for a modern look */
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff; /* Consistent blue theme */
+}
+
+.success, .error {
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.success {
+  background-color: #28a745; /* Success green */
+}
+
+.error {
+  background-color: #FEC500; /* Error red */
+}
+
+.actor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.button-container-both {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space around items */
+  padding: 10px; /* Optional: adds padding inside the container */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.submit-button {
+  flex-shrink: 0; /* Prevent the button from shrinking */
+  flex-grow: 0; /* Prevent the button from growing */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 150px; /* Fixed width */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"] {
+  padding: 16px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #343a40; /* Dark input background */
+  color: #ffffff; /* Light text */
+  border: none;
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  .actor-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .actor-card {
+    width: 35vw;
+    margin: 2px;
+  }
+
+  .modal {
+    width: 95%; /* Almost full width on small screens */
+  }
+
+  .title {
+    color: #d8ebad; /* Vibrant blue for titles */
+    font-size: 24px; /* Larger font size for titles */
+    text-align: center;
+  }
+
+  input[type="text"] {
+    padding: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #343a40; /* Dark input background */
+    color: #ffffff; /* Light text */
+    border: none;
+    width: 85%;
+    font-size: larger;
+  }
+}
+
+
+/* body {
+  background-color: #000000;
   font-family: Arial, sans-serif;
 }
 
@@ -38,19 +269,19 @@ body {
 }
 
 .actor-card {
-  width: 200px; /* Fixed width for each card */
-  margin: 10px; /* Margin around cards */
-  border: 1px solid #ccc; /* Optional border */
+  width: 200px;
+  margin: 10px; 
+  border: 1px solid #ccc;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  text-align: center; /* Centering text */
-  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #fff;
 }
 
 .actor-image {
-  width: 100%; /* Make image fill the card */
-  height: 300px; /* Fixed height for images */
-  object-fit: cover; /* Ensure image covers the space without distortion */
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 
@@ -94,7 +325,7 @@ body {
 
 
 .actor-card:hover {
-  transform: scale(1.05); /* slightly enlarge card on hover */
+  transform: scale(1.05);
 }
 .game-container {
   display: flex;
@@ -103,7 +334,7 @@ body {
 }
 
 .actor-list {
-  margin-bottom: 20px; /* Spacing between actor cards and input area */
+  margin-bottom: 20px;
 }
 
 .input-area {
@@ -142,17 +373,17 @@ body {
 
 .button-container {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
-  justify-content: space-between; /* Distribute space evenly */
-  min-height: 50px; /* Or any other suitable height */
+  align-items: center; 
+  justify-content: space-between; 
+  min-height: 50px;
 }
 .button-container {
-  flex-direction: column; /* Stack buttons vertically on small screens */
+  flex-direction: column;
   width: 33%;
 }
 
 .button-container button {
-  margin: 5px; /* Add some margin between buttons */
+  margin: 5px; 
   width: 100%;
 }
 
@@ -176,8 +407,8 @@ button:hover {
 input[type="text"] {
   padding: 16px;
   margin: 10px;
-  width: 200px; /* responsive width */
-  box-sizing: border-box; /* include padding and border in width */
+  width: 200px; 
+  box-sizing: border-box;
   width: 33%;
   border-radius: 10px;
 }
@@ -187,7 +418,7 @@ input[type="text"] {
   transition: filter 1s;
 }
 .imdb-logo {
-  width: 50px; /* Adjust size as needed */
+  width: 50px; 
   margin-top: 10px;
 }
 
@@ -198,21 +429,21 @@ input[type="text"] {
     justify-content: space-around;
   }
   .actor-card {
-    flex: 0 0 36%; /* Makes each card take up nearly half the width of the container */
-    margin-bottom: 10px; /* Adds some space between the rows */
+    flex: 0 0 36%;
+    margin-bottom: 10px;
   }
 
   .actor-image {
-    height: auto; /* Reduce image height on small screens */
+    height: auto;
   }
 
   .input-area {
     padding-left: 2.5%;
-    width: 95%; /* Make input area take up full width on small screens */
+    width: 95%;
   }
 
   input[type="text"] {
-    width: 100%; /* Make input field take up full width on small screens */
+    width: 100%; 
     font-size: 18px;
   }
 
@@ -243,13 +474,13 @@ input[type="text"] {
     width: 80%;
   }
   .button-container {
-    flex-direction: column; /* Stack buttons vertically on small screens */
+    flex-direction: column; 
   }
 }
 
-@media (max-width: 600px) { /* Adjust based on your mobile breakpoint */
+@media (max-width: 600px) { 
   .button-container {
-    flex-direction: column; /* Stack buttons vertically on small screens */
+    flex-direction: column; 
     width: 100%;
   }
-}
+} */
