@@ -1,11 +1,11 @@
 {
   "quizzes": [
     {
-      "date": "2024-04-20",
+      "date": "2024-04-18",
       "actors": [
         {
           "id": 1,
-          "name": "Robyn Williams",
+          "name": "Robin Williams",
           "image": "https://resizing.flixster.com/dd0okVg6J1R3HEzb5k5lwV7vcxU=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/55875_v9_ba.jpg",
           "common": "Played Presidents",
           "link": "https://www.imdb.com/name/nm0000245/?ref_=nv_sr_srsg_6_tt_0_nm_8_q_robyn%2520williams"
@@ -35,7 +35,7 @@
       "hints": [
         {
           "hint1": "Similar role",
-          "hint2": "Polictical",
+          "hint2": "Political",
           "hint3": "Leader"
         }
       ],
