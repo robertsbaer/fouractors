@@ -260,6 +260,51 @@
         "they played in batman",
         "batman"
       ]
+    },
+    {
+      "date": "2024-04-25",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Peter Sellers",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Peter_Sellers_at_home_in_Belgravia%2C_London%2C_1973.jpg/440px-Peter_Sellers_at_home_in_Belgravia%2C_London%2C_1973.jpg",
+          "common": "Pink Panther",
+          "link": "https://www.imdb.com/name/nm0000634/"
+        },
+        {
+          "id": 2,
+          "name": "Alan Arkin",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Alan_Arkin_-_1975.jpg/440px-Alan_Arkin_-_1975.jpg",
+          "common": "Pink Panther",
+          "link": "https://www.imdb.com/name/nm0000273/?ref_=fn_al_nm_1"
+        },
+        {
+          "id": 3,
+          "name": "Roger Moore",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sir_Roger_Moore_3.tif/lossy-page1-440px-Sir_Roger_Moore_3.tif.jpg",
+          "common": "Pink Panther",
+          "link": "https://www.imdb.com/name/nm0000549/?ref_=nv_sr_srsg_0_tt_3_nm_5_q_Roger%2520Moore"
+        },
+        {
+          "id": 4,
+          "name": "Steve Martin",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Steve_Martin%2C_2017-08-11_%28cropped%29.jpg/440px-Steve_Martin%2C_2017-08-11_%28cropped%29.jpg",
+          "common": "Pink Panther",
+          "link": "https://www.imdb.com/name/nm0000188/?ref_=fn_al_nm_1"
+        }
+      ],
+      "hints": [
+        {
+          "hint1": "silly",
+          "hint2": "Crime Solver",
+          "hint3": "Pink"
+        }
+      ],
+      "answers": [
+        "Inspector Jacques Clouseau",
+        "Inspector Clouseau",
+        "Clouseau"
+      ]
     }
   ]
 }
