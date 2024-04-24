@@ -214,6 +214,45 @@
         "Played a serial killer",
         "they played serial killers"
       ]
+    },
+    {
+      "date": "2024-04-24",
+      "actors": [
+        {
+          "id": 1,
+          "name": "Julie Newmar",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Julie_Newmar_-_1965.jpg/220px-Julie_Newmar_-_1965.jpg",
+          "common": "Batman",
+          "link": "https://www.imdb.com/name/nm0628325/"
+        },
+        {
+          "id": 2,
+          "name": "Lee Meriwether",
+          "image": "http://leemeriwether.com/img/leetimetunnel.jpg",
+          "common": "Batman",
+          "link": "https://www.imdb.com/name/nm0580886/"
+        },
+        {
+          "id": 3,
+          "name": "Eartha Kitt",
+          "image": "https://daily.jstor.org/wp-content/uploads/2021/03/when_eartha_kitt_condemned_poverty_and_war_at_the_whitehouse_1050x700.jpg",
+          "common": "Batman",
+          "link": "https://www.imdb.com/name/nm0457755/?ref_=fn_al_nm_1"
+        },
+        {
+          "id": 4,
+          "name": "Camren Bicondova",
+          "image": "https://static1.colliderimages.com/wordpress/wp-content/uploads/camren-bicondova-gotham-418x600.jpg?q=50&fit=crop&w=750&dpr=1.5",
+          "common": "Batman",
+          "link": "https://www.imdb.com/name/nm4800564/?ref_=fn_al_nm_1"
+        }
+      ],
+      "answers": [
+        "Catwoman",
+        "they all played catwoman",
+        "they played in batman",
+        "batman"
+      ]
     }
   ]
 }
