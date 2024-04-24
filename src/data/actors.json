@@ -1,7 +1,7 @@
 {
   "quizzes": [
     {
-      "date": "2024-04-18",
+      "date": "2024-04-19",
       "actors": [
         {
           "id": 1,
@@ -42,7 +42,7 @@
       "answers": ["presidents", "played presidents", "they played presidents"]
     },
     {
-      "date": "2024-04-19",
+      "date": "2024-04-20",
       "actors": [
         {
           "id": 1,
@@ -83,7 +83,7 @@
       "answers": ["oscars", "won oscars", "oscar winner", "they won oscars"]
     },
     {
-      "date": "2024-04-20",
+      "date": "2024-04-21",
       "actors": [
         {
           "id": 1,
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "date": "2024-04-21",
+      "date": "2024-04-22",
       "actors": [
         {
           "id": 1,
@@ -170,7 +170,7 @@
       "answers": ["Mister Fantastic", "the fantastic four", "the fantastic 4"]
     },
     {
-      "date": "2024-04-22",
+      "date": "2024-04-23",
       "actors": [
         {
           "id": 1,
@@ -245,6 +245,13 @@
           "image": "https://static1.colliderimages.com/wordpress/wp-content/uploads/camren-bicondova-gotham-418x600.jpg?q=50&fit=crop&w=750&dpr=1.5",
           "common": "Batman",
           "link": "https://www.imdb.com/name/nm4800564/?ref_=fn_al_nm_1"
+        }
+      ],
+      "hints": [
+        {
+          "hint1": "Similar role",
+          "hint2": "knight",
+          "hint3": "Meow"
         }
       ],
       "answers": [
